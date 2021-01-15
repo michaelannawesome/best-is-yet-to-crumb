@@ -12,13 +12,8 @@
   --white: #fff;
 }
 
-/* Remove the body margin */
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0 1rem;
-}
+
+
 
 /* Style the button and tell it not to grow */
 button {
