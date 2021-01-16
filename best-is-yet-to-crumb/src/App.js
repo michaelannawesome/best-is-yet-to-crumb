@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
-import background from "./Images/Crumb2.jpg"
+import Background from "./Images/final-img.jpg"
 import SearchResults from "./Components/SearchResults";
 import Header from "./Components/Header.jsx";
 import SearchForm from "./Components/SearchForm.jsx";
@@ -16,7 +16,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
   const [searchString, setSearchString] = useState('carrot');
-  const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${searchString}`;
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchString}`;
   // **Original code**
   useEffect(() => {
     getRecipe(searchString);
@@ -58,10 +58,7 @@ function App() {
 
   return (
     
-    <div className="main">
-      <div style= {{ backgroundImage: `url(${background})`}}>
-        
-      </div>
+    <div>
       <div className="header">
         <Header />
       </div>

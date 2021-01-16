@@ -5,6 +5,7 @@ function SearchForm({ handleSubmit, handleChange, searchString }) {
     return (
         <form onSubmit={handleSubmit} className= "form">
             <input
+            className="bar"
             placeholder="search"
             type= "text"
             name= "searchString"
