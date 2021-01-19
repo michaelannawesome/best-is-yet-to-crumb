@@ -16,7 +16,9 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
   const [searchString, setSearchString] = useState('carrot');
-  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchString}`;
+  
+  const SearchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchString}`;
+  const randomUrl=`https://www.themealdb.com/api/json/v1/1/random.php`;
   // **Original code**
   useEffect(() => {
     getRecipe(searchString);
@@ -36,12 +38,23 @@ function App() {
   // },[]);
 
   async function getRecipe(searchString) {
-    await fetch(url)
+    await fetch(SearchUrl)
       .then((response) => response.json())
       .then((response) => {
         console.log(response);
         setRecipes(response.meals);
         setSearchString("");
+      })
+      .catch(console.error);
+  }
+
+async function getRandom() {
+    await fetch(randomUrl)
+      .then((response) => response.json())
+      .then((response) => {
+        
+        setRecipes(response.meals);
+       
       })
       .catch(console.error);
   }
@@ -52,8 +65,15 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(searchString)
+    
     getRecipe(searchString);
+  
+  }
+
+  function handleRandom (event) {
+    event.preventDefault();
+    getRandom();
+  
   }
 
   return (
@@ -66,7 +86,9 @@ function App() {
       <div className="search">
         <SearchForm  handleChange={handleChange}
           handleSubmit={handleSubmit}
-          searchString={searchString}/>
+          searchString={searchString}
+          handleRandom={handleRandom}
+          />
       </div>
       </div>
       <div className="results">

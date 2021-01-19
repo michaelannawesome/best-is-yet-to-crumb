@@ -6,34 +6,36 @@
 
 /* Create color variables */
  :root {
-  --primary: #e0d35f;
-  --secondary: #501703;
-  --secondary-light: #faacac;
+  --primary: #f6ae2d;
+  --secondary: #f26419;
+  --secondary-light: #f4aa5b;
   --white: #fff;
 }
 
 .header-container {
   
   color: #05299e;
-  
+  background-image: linear-gradient(#f265197c, #f6ae2d);
   /* text-align: center; */
-  background-color: rgba(240, 255, 255, 0.495);
+  /* background-color: rgba(240, 255, 255, 0.495); */
   /* margin: 0 auto; */
+  font-family:'Alegreya SC', serif;
 
   font-size: 20px;
   margin: auto;
   width: 50%;
-  border: 3px solid #73AD21;
+  border: 3px solid #2f4858;
   padding: 10px;
 }
 
 .results {
   margin: auto;
-  width: 100%;
-  border: 3px solid #73AD21;
+  width: 80%;
+  border: 3px solid #2f4858;
   padding: 10px;
-  background-color: rgba(127, 255, 212, 0.365);
+  background-color: #f6b02de2;
   text-align: center;
+  color: rgb(4, 40, 72);
 }
 
 body{
@@ -48,28 +50,20 @@ body{
 
 
 .button, .random {
-  background-color: var(--primary);
-  border: 0;
+  background-color: #33658a;
+  /* border: 0; */
   color: var(--white);
-  /* flex-grow: 0; */
+  
   font-size: 1.2rem;
   line-height: 1;
   padding: 0.75rem 1rem;
-  border-radius: 50px 20px;
+  border-radius: 50%;
 }
 
 
  
 
-/* input {
-  padding: 3rem;
-  border: dodgerblue;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  border-radius: 70px 30px;
-  width: 35%;
-}  */
+
 
 
 .bar {
@@ -97,16 +91,19 @@ body{
 /* Apply flex to the form */
 .input-container {
   display: flex;
-    justify-content: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px;
+  
 } 
 
 
 .footer {
-  background-color: turquoise;
+  background-color: #f26419;
   color: white;
   padding: 15px;
   font-size: 33px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   margin-top: 100px;
