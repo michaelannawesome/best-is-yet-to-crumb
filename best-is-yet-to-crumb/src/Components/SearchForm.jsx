@@ -13,7 +13,8 @@ function SearchForm({ handleSubmit, handleChange, searchString }) {
             onChange={handleChange}
             value= {searchString}
             />
-            <button type="submit" >Cook</button>
+            <button className="button" type="submit" >Cook</button>
+            <button className="random">Choose for me! </button>
         </form>
     );
 }

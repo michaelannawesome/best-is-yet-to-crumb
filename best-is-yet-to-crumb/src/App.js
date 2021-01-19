@@ -59,22 +59,26 @@ function App() {
   return (
     
     <div>
-      <div className="header">
+      <div className="header-container">
         <Header />
       </div>
+      <div className="input-container">
       <div className="search">
         <SearchForm  handleChange={handleChange}
           handleSubmit={handleSubmit}
           searchString={searchString}/>
+      </div>
       </div>
       <div className="results">
         <SearchResults
           meals={recipes}
         />
       </div>
-     
+      
       <div className="footer">
+        <div>
         <Footer />
+        </div>
       </div>
     </div>
   );

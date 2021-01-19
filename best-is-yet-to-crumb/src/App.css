@@ -12,13 +12,29 @@
   --white: #fff;
 }
 
-.header {
-  margin-bottom: 3em;
-  padding: 10px;
-  color: black;
+.header-container {
   
+  color: #05299e;
+  
+  /* text-align: center; */
+  background-color: rgba(240, 255, 255, 0.495);
+  /* margin: 0 auto; */
+
+  font-size: 20px;
+  margin: auto;
+  width: 50%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.results {
+  margin: auto;
+  width: 100%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: rgba(127, 255, 212, 0.365);
   text-align: center;
-} 
+}
 
 body{
  background-image: url('https://cdn5.vectorstock.com/i/1000x1000/39/79/pop-art-fast-food-concept-vector-18633979.jpg');
@@ -31,27 +47,29 @@ body{
 
 
 
-button {
+.button, .random {
   background-color: var(--primary);
   border: 0;
   color: var(--white);
-  flex-grow: 0;
+  /* flex-grow: 0; */
   font-size: 1.2rem;
   line-height: 1;
   padding: 0.75rem 1rem;
-  text-transform: uppercase;
+  border-radius: 50px 20px;
 }
 
 
- button + button,
-input + button {
-  margin-left: 2px;
-}
+ 
 
-form {
-  padding: 1rem 0;
+/* input {
+  padding: 3rem;
   border: dodgerblue;
-} 
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  border-radius: 70px 30px;
+  width: 35%;
+}  */
 
 
 .bar {
@@ -61,7 +79,7 @@ form {
   /* flex-grow: 1; */
   font-size: 1.2rem;
   padding: 0.75rem 1rem;
-  width: 30%;
+  width: 50%;
 } 
 
 
@@ -77,11 +95,22 @@ form {
 }
 
 /* Apply flex to the form */
-/* .form-horizontal {
-  align-items: center;
+.input-container {
   display: flex;
-}  */
+    justify-content: center;
+} 
 
+
+.footer {
+  background-color: turquoise;
+  color: white;
+  padding: 15px;
+  font-size: 33px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
 /* Add a media query to add more space between
 the button and input when the browser is at least
 600px wide */
