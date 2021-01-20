@@ -8,6 +8,8 @@ import Nav from "./Components/Nav.jsx";
 import SearchForm from "./Components/SearchForm.jsx";
 import Footer from "./Components/Footer.jsx";
 import Home from "./Components/Home.jsx";
+import Ingredients from "./Components/Ingredients.jsx";
+import Supplies from "./Components/Supplies.jsx";
 
 
 
@@ -77,7 +79,8 @@ async function getRandom() {
       </div>
       <div>
       <Route exact path="/" component={Home} />
-        
+      <Route exact path="/ingredients" component={Ingredients} />
+      <Route exact path="/supplies" component={Supplies} />
       </div>
       
       <div className="input-container">

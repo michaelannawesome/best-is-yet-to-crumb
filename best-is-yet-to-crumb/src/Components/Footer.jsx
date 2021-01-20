@@ -1,4 +1,5 @@
 import React from 'react';
+import GH from '../Images/Gitlogo.png'
 
 function Footer(props) {
     return (
@@ -9,8 +10,8 @@ function Footer(props) {
            <div className="logo-links">
              <div className="git">
                <a href="https://github.com/michaelannawesome" target='blank' rel='noreferrer'>
-                 GitHub <br/>
-               <img src="https://www.flaticon.com/svg/vstatic/svg/1322/1322053.svg?token=exp=1611123304~hmac=0d8e54f15d21a1b7cbc77989b5870a8d" alt="github" height='60px' />
+                  
+               <img src={GH} alt="" height='60px' />
                   </a>
                     </div>
              </div>

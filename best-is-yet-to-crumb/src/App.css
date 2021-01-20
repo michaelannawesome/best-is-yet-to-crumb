@@ -100,12 +100,13 @@ body {
 .footer {
   background-color: #f26419;
   color: white;
-  padding: 15px;
+  /* padding: 2px; */
   font-size: 33px;
   position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 30px;
+  height: 30%;
 }
 /* Add a media query to add more space between
 the button and input when the browser is at least
