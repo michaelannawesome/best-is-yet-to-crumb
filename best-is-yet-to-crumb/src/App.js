@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Background from "./Images/final-img.jpg"
+// import Background from "./Images/final-img.jpg"
 import SearchResults from "./Components/SearchResults";
 import Header from "./Components/Header.jsx";
+import Nav from "./Components/Nav.jsx";
 import SearchForm from "./Components/SearchForm.jsx";
 import Footer from "./Components/Footer.jsx";
+import Home from "./Components/Home.jsx";
 
 
 
@@ -23,19 +25,7 @@ function App() {
   useEffect(() => {
     getRecipe(searchString);
   }, []);
-  // **************
-
-  // useEffect (() => {
-  //     fetch(url)
-  //     .then(response => response.json())
-  //     .then(jsonResponse => {
-
-  //       setSearchString ({
-  //         type:"Recipe_Found",
-  //         payload: jsonResponse.Layout
-  //       });
-  //     });
-  // },[]);
+  
 
   async function getRecipe(searchString) {
     await fetch(SearchUrl)
@@ -77,18 +67,27 @@ async function getRandom() {
   }
 
   return (
-    
+    <Router>
     <div>
       <div className="header-container">
         <Header />
       </div>
+      <div>
+        <Nav/>
+      </div>
+      <div>
+      <Route exact path="/" component={Home} />
+        
+      </div>
+      
       <div className="input-container">
       <div className="search">
-        <SearchForm  handleChange={handleChange}
+       <SearchForm 
+          handleChange={handleChange}
           handleSubmit={handleSubmit}
           searchString={searchString}
           handleRandom={handleRandom}
-          />
+           />
       </div>
       </div>
       <div className="results">
@@ -103,6 +102,7 @@ async function getRandom() {
         </div>
       </div>
     </div>
+    </Router>
   );
 }
 

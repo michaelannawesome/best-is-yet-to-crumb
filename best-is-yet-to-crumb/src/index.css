@@ -1,12 +1,19 @@
 body {
   margin: 0;
-  font-family:  'Alegreya SC', serif;
-  font-family: 'Lato', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  /* font-family: "Sofia", cursive; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'heart';
 }
 
 code {
-  font-family: 'Alegreya SC', serif;
-  font-family: 'Lato', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  /* font-family: "Sofia", cursive; */
+  font-family: 'heart';
+}
+
+@font-face {
+  font-family: 'heart';
+  src: local('heart'), url(./Fonts/heart.otf) format('truetype');
 }

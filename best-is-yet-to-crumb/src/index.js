@@ -5,6 +5,7 @@ import {
 } from "react-router-dom"
 import './index.css';
 import App from './App';
+import './Fonts/heart.otf'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

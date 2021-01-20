@@ -7,7 +7,7 @@ function Header(props) {
     return (
         <div >
            
-           <h1>THE BEST IS YET TO CRUMB</h1>
+           <h1>The Best is Yet to Crumb</h1>
           
            <div>
            {/* <img width= "200"

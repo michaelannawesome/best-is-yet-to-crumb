@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const SearchResults = (props) => {
   
   const main = props.meals.map((meal) => {
