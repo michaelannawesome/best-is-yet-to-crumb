@@ -1,5 +1,7 @@
 # The Best Is Yet To Crumb
 
+![Cooking Gif](https://media.giphy.com/media/3otWplEIB7BiEbvGHS/giphy.gif)
+
 A dynamic recipe finder app that assures the user
 'not to sweat the small stove'. This accessible
 app makes it easy, especially when poach comes to
@@ -41,3 +43,7 @@ with step-by-step instructions.
 - _Or_ Use the "Choose for me" button to generate a recipe at random
 - Out of something? _Click_ the "Ingredients" link for grocery store recommendations.
 - Don't have the right tools for the job? _Click_ the "Supplies" link for kitchen essentials retailers.
+
+#### Future of Crumbs
+
+This app functions as I invisioned, however, I will continue to build this app out to have more components with options to save favorite recipes. Creativity fuels me and I am always open to fellow creatives with suggestions or ideas. Please feel free to send me a message or submit an issue involving this app. Thank you for checking it out!
