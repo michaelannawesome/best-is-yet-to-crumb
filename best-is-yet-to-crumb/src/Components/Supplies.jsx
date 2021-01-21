@@ -15,7 +15,6 @@ function Supplies(props) {
         >
           <img src={SR} alt="" height="100px" />
         </a>
-
         <a
           href="https://www.crateandbarrel.com/kitchen-and-food/cookware-bakeware/?st=cookware"
           target="blank"
@@ -23,7 +22,6 @@ function Supplies(props) {
         >
           <img src={CB} alt="" height="100px" />
         </a>
-
         <a
           href="https://www.williams-sonoma.com/shop/cookware/?cm_type=gnav"
           target="blank"

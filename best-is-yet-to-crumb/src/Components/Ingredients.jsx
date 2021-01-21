@@ -11,11 +11,9 @@ function Ingredients(props) {
         <a href="https://www.traderjoes.com/" target="blank" rel="noreferrer">
           <img src={TJ} alt="" height="100px" />
         </a>
-
         <a href="https://www.wholefoods.com/" target="blank" rel="noreferrer">
           <img src={WF} alt="" height="100px" />
         </a>
-
         <a
           href="https://www.handymarketburbank.com/"
           target="blank"

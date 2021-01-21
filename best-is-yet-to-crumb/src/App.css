@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Create color variables */
 :root {
   --primary: #f6ae2d;
   --secondary: #f26419;
@@ -70,7 +69,6 @@ body {
   align-items: center;
   min-height: auto;
   list-style: none;
-  /* padding: 1rem; */
   margin: 1rem;
   font-size: 33px;
   text-decoration: underline;
@@ -86,9 +84,7 @@ body {
 
 .button,
 .random {
-  /* background-image: linear-gradient(#f2080893, #f5be57e3); */
   background-color: skyblue;
-  /* border: 0; */
   color: black;
   font-family: "heart";
   font-size: 1.2rem;
@@ -108,8 +104,7 @@ body {
 }
 
 .bar::placeholder {
-  color: black;
-  font-family: "hearts";
+  color: rgb(170, 74, 124);
 }
 
 .bar:focus,
@@ -137,23 +132,3 @@ body {
   height: 30%;
   text-shadow: 2px 2px #ff0000;
 }
-/* Add a media query to add more space between
-the button and input when the browser is at least
-600px wide */
-/* @media (min-width: 600px) {
-  button + button,
-  input + button {
-    margin-left: 1rem;
-  }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
- */
