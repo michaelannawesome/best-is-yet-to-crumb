@@ -10,7 +10,7 @@ dish name. Get ready to peel the burn as this
 project will surely deliver the tastiest meals
 with step-by-step instructions.
 
-![Screenshot of Project](../Images/project2.png)
+![Screenshot of Project](./Images/project2.png)
 
 ### Technologies Used
 
@@ -26,7 +26,7 @@ with step-by-step instructions.
 
 ### Early Iteration
 
-![Wireframe](../Images/CrumbWire.png)
+![Wireframe](./Images/CrumbWire.png)
 
 ### Getting Started/Installation Instructions:
 
