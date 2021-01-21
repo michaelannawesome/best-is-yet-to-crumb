@@ -10,7 +10,7 @@ dish name. Get ready to peel the burn as this
 project will surely deliver the tastiest meals
 with step-by-step instructions.
 
-![Screenshot of Project](../Images/project2.png)
+![Screenshot of Project](./project2.png)
 
 ### Technologies Used
 
@@ -26,7 +26,7 @@ http://bestcrumb.surge.sh/
 
 ### Early Iteration
 
-![Wireframe](../Images/CrumbWire.png)
+![Wireframe](./CrumbWire.png)
 
 ### Getting Started/Installation Instructions:
 
