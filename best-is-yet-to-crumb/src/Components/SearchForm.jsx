@@ -18,12 +18,12 @@ function SearchForm({
           value={searchString}
         />
         <button className="button" type="submit">
-          Cook
+          <strong>Cook</strong>
         </button>
       </form>
       <form onSubmit={handleRandom}>
         <button className="button" type="submit">
-          Choose for me!{" "}
+          <strong>Choose for me</strong>
         </button>
       </form>
     </div>

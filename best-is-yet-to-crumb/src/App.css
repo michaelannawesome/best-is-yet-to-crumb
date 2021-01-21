@@ -15,12 +15,8 @@
 .header-container {
   color: #05299e;
   background-image: linear-gradient(#f265197c, #f6ae2d);
-  /* text-align: center; */
-  /* background-color: rgba(240, 255, 255, 0.495); */
-  /* margin: 0 auto; */
-
   font-family: "heart";
-
+  text-shadow: 2px 2px #ff0000;
   font-size: 25px;
   margin: auto;
   width: 65%;
@@ -36,7 +32,28 @@
   background-color: #f6b02de2;
   text-align: center;
   color: rgb(4, 40, 72);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.ing-container,
+.sup-container {
+  margin: auto;
+  width: 80%;
+  border: 3px solid #2f4858;
+  padding: 10px;
+  background-color: #f6b02de2;
+  text-align: center;
+  color: #05299e;
+  font-family: "heart";
+  text-shadow: 2px 2px #ff0000;
+  font-size: 23px;
+}
+
+.ing-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 body {
@@ -53,16 +70,27 @@ body {
   align-items: center;
   min-height: auto;
   list-style: none;
-  border-bottom: 3px solid red;
+  /* padding: 1rem; */
+  margin: 1rem;
+  font-size: 33px;
+  text-decoration: underline;
+  color: black;
+  background-image: linear-gradient(#f265197c, #f6ae2d);
+  width: 100%;
+  text-shadow: 2px 2px #ff0000;
 }
 
+.nav:hover {
+  color: red;
+}
 
 .button,
 .random {
-  background-color: #33658a;
+  /* background-image: linear-gradient(#f2080893, #f5be57e3); */
+  background-color: skyblue;
   /* border: 0; */
-  color: var(--white);
-
+  color: black;
+  font-family: "heart";
   font-size: 1.2rem;
   line-height: 1;
   padding: 0.75rem 1rem;
@@ -70,17 +98,18 @@ body {
 }
 
 .bar {
-  background-color: var(--secondary-light);
+  background-color: white;
   border: 2px solid var(--secondary);
   color: var(--white);
-  /* flex-grow: 1; */
   font-size: 1.2rem;
   padding: 0.75rem 1rem;
+  margin: 0.25rem;
   width: 50%;
 }
 
 .bar::placeholder {
-  color: var(--white);
+  color: black;
+  font-family: "hearts";
 }
 
 .bar:focus,
@@ -89,10 +118,9 @@ body {
   outline: 0;
 }
 
-/* Apply flex to the form */
-.input-container {
+.searchForm {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px;
   margin: 5px;
 }
@@ -107,6 +135,7 @@ body {
   width: 100%;
   margin-top: 30px;
   height: 30%;
+  text-shadow: 2px 2px #ff0000;
 }
 /* Add a media query to add more space between
 the button and input when the browser is at least

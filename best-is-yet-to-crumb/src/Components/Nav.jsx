@@ -1,24 +1,14 @@
 import React from "react";
-// import "../App.css";
-// import { Link, withRouter } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 function Nav(props) {
-    const nStyle = {
-        color: 'white'
-    }
+    
   return (
-    <div>
-      <ul className="nav">
-        {/* <link style= {nStyle} to="/"> */}
-          <li>Home</li>
-        {/* </link> */}
-        {/* <link style= {nStyle} to="/ingredients"> */}
-          <li>Ingredients</li>
-        {/* </link> */}
-        {/* <link style= {nStyle} to="/supplies"> */}
-          <li>Supplies</li>
-        {/* </link> */}
-      </ul>
+    <div className="nav">
+      <Link to="/"><strong>Home</strong></Link>
+      <Link to="/ingredients"><strong>Ingredients</strong></Link>
+      <Link to="/supplies"><strong>Supplies</strong></Link>
     </div>
   );
 }
